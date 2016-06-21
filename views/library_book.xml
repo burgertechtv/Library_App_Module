@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<openerp>
 		<data>
-			<!-- Data records go here -->
+		<!-- Data records go here -->
+				
+			<!-- Defines action when clicked -->
+			<act_window
+				id="library_book_action"
+				name="Library Books"
+				res_model="library.book" />
+			
+			<!-- Adds menu button to menu -->
+			<menuitem
+				id="library_book_menu"
+				name="Library"
+				action="library_book_action"
+				parent=""
+				sequence="5" />
 		</data>
 </openerp>
